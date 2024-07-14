@@ -1,42 +1,137 @@
 {
-    "name": "Home",
-    "path": "/",
-    "sections": [
-      {
-        "__resolveType": "Header"
+  "name": "Home",
+  "path": "/",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Header.tsx",
+      "navigation": {
+        "links": [],
+        "buttons": []
       },
-      {
-        "__resolveType": "site/sections/Hero.tsx",
-        "title": "<p>Click here to tweak this text however you want.</p>",
-        "cta": [],
-        "description": "This text is fully editable and ready for your personal touch. Just click here, head over to the section window, or dive straight into the code to make changes as you see fit. Whether it's about the content, formatting, font, or anything in between, editing is just a click away."
-      },
-      {
-        "__resolveType": "site/sections/Logos.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx"
-      },
-      {
-        "__resolveType": "site/sections/ImageWithParagraph.tsx",
-        "placement": "right"
-      },
-      {
-        "__resolveType": "site/sections/BlogPosts.tsx"
-      },
-      {
-        "__resolveType": "site/sections/Testimonials.tsx",
-        "arrows": true
-      },
-      {
-        "__resolveType": "site/sections/Faq.tsx"
-      },
-      {
-        "__resolveType": "Footer"
+      "logo": {
+        "src": ""
       }
-    ],
-    "__resolveType": "website/pages/Page.tsx",
-    "seo": {
-      "__resolveType": "website/sections/Seo/SeoV2.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Hero.tsx",
+      "title": "<p>Manage Your Courses with Ease</p>",
+      "cta": [],
+      "image": "https://www.chawtechsolutions.com/wp-content/uploads/2019/03/developer-dribbble.gif",
+      "description": "Welcome to our course management system. Streamline your course creation, organization, and tracking. Whether you're an educator looking to enhance your teaching methods or a student aiming to excel in your studies, our platform provides all the tools you need for success."
+    },
+    {
+      "__resolveType": "site/sections/ImageWithParagraph.tsx",
+      "description": "Course Creation and Management: Easily create, manage, and organize your courses. Our intuitive interface allows you to structure your content effectively and track student progress.\n\nStudent Engagement: Foster an engaging learning environment with interactive features, discussion forums, and real-time feedback. Keep students motivated and involved throughout their learning journey.\n\nPerformance Analytics: Gain valuable insights into student performance with comprehensive analytics. Track progress, identify areas for improvement, and tailor your teaching strategies accordingly.",
+      "placement": "left",
+      "tagline": "Empowering Educators and Students",
+      "title": "Features and Benefits",
+      "image": "https://cdn.dribbble.com/users/66085/screenshots/2942119/onlice_courses_by_zivile_zickute.gif"
+    },
+    {
+      "__resolveType": "site/sections/BlogPosts.tsx",
+      "title": "Latest Updates and Tips",
+      "description": "Stay updated with our latest blog posts on course management, teaching strategies, and student success tips.",
+      "posts": [
+        {
+          "tags": [],
+          "title": "Effective Online Teaching Techniques",
+          "author": "John Doe",
+          "excerpt": "Discover the best practices for teaching online and engaging students in a virtual environment.",
+          "image": "PLACEHOLDER_FOR_IMAGE",
+          "date": "July 13",
+          "readingTime": "5 mins"
+        },
+        {
+          "tags": [],
+          "title": "Maximizing Student Engagement",
+          "author": "Jane Smith",
+          "excerpt": "Learn how to keep your students engaged and motivated throughout your course.",
+          "image": "PLACEHOLDER_FOR_IMAGE",
+          "date": "July 12",
+          "readingTime": "4 mins"
+        },
+        {
+          "tags": [],
+          "title": "Using Analytics to Improve Teaching",
+          "author": "Alex Johnson",
+          "excerpt": "Understand how to leverage data and analytics to enhance your teaching methods and student outcomes.",
+          "image": "PLACEHOLDER_FOR_IMAGE",
+          "date": "July 11",
+          "readingTime": "6 mins"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Testimonials.tsx",
+      "arrows": true,
+      "slides": [
+        {
+          "content": {
+            "description": "This course management system has transformed the way I teach. It's user-friendly and offers all the features I need to keep my students engaged and on track.",
+            "avatar": "PLACEHOLDER_FOR_IMAGE",
+            "name": "Emily Brown"
+          }
+        },
+        {
+          "content": {
+            "name": "Michael Lee",
+            "description": "As a student, this platform has made it so much easier to stay organized and access all my course materials in one place. Highly recommend!",
+            "avatar": "PLACEHOLDER_FOR_IMAGE"
+          }
+        },
+        {
+          "content": {
+            "name": "Sarah Kim",
+            "description": "The analytics tools have been a game-changer for me. I can see exactly where my students are struggling and adjust my teaching accordingly.",
+            "avatar": "PLACEHOLDER_FOR_IMAGE"
+          }
+        }
+      ],
+      "title": "What Our Users Say"
+    },
+    {
+      "__resolveType": "site/sections/Faq.tsx",
+      "title": "Frequently Asked Questions",
+      "description": "Find answers to common questions about our course management system.",
+      "questions": [
+        {
+          "title": "How do I create a new course?",
+          "answer": "<p>Creating a new course is simple. Just click on the 'Create Course' button, fill in the required details, and start adding your content.</p>"
+        },
+        {
+          "title": "Can I track student progress?",
+          "answer": "<p>Yes, our platform offers detailed analytics to help you monitor student progress and identify areas for improvement.</p>"
+        },
+        {
+          "title": "Is there a mobile version available?",
+          "answer": "<p>Yes, our course management system is fully responsive and can be accessed on any mobile device.</p>"
+        },
+        {
+          "title": "How do I engage students in my course?",
+          "answer": "<p>We offer various tools such as discussion forums, quizzes, and real-time feedback to help you engage your students effectively.</p>"
+        },
+        {
+          "title": "Can I customize my course layout?",
+          "answer": "<p>Yes, you can customize the layout and structure of your courses to suit your teaching style and preferences.</p>"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/Footer.tsx",
+      "links": [],
+      "bottomLinks": [],
+      "social": [],
+      "subscribe": {
+        "title": "Subscribe to Our Newsletter",
+        "description": "Stay updated with the latest news and tips on course management."
+      },
+      "logo": {
+        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11593/b5a87086-a8a3-44c1-8dc5-956d694a3a1a"
+      }
     }
+  ],
+  "__resolveType": "website/pages/Page.tsx",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
   }
+}
